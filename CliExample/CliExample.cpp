@@ -3,20 +3,24 @@
 
 #include "stdafx.h"
 #include "ManagedBridge.h"
+#include "../NavitarWrapper/NavitarWrapper.h"
 
 using namespace ManagedBridge;
 
-Bridge* ptr = NULL;
+//Bridge* ptr = NULL;
 	
 int _tmain(int argc, _TCHAR* argv[])
 {
-	ptr = new Bridge();
+	Bridge* ptr = new Bridge();
 
 	ptr->PrintMessage("Call 1 to managed component through CLI boundary. Value should display as 0");
 	ptr->SetValue(15);
 	ptr->PrintMessage("Call 2 to managed component through CLI boundary. Value should display as 15.");
 	
-	delete ptr;
+	Bridge* bridge = (Bridge*) getBridge();
+
+	bridge->PrintMessage("Hello");
+	//delete ptr;
 	return 0;
 }
 

@@ -1,0 +1,4 @@
+P:\bridge\ManagedComponent\bin\Debug\ManagedComponent.dll
+P:\bridge\ManagedComponent\bin\Debug\ManagedComponent.pdb
+P:\bridge\ManagedComponent\obj\Debug\ManagedComponent.dll
+P:\bridge\ManagedComponent\obj\Debug\ManagedComponent.pdb
