@@ -1,9 +1,0 @@
-bin/
-obj/
-[Dd]ebug/
-[Rr]elease/
-packages/
-*.user
-*.ncb
-*.aps
-*.suo
