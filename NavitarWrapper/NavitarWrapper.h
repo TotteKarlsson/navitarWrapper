@@ -4,12 +4,16 @@
 #define NAVITARWRAPPER_API __declspec(dllimport)
 #endif
 
-#include "ManagedBridge.h"
-using namespace ManagedBridge;
+#ifdef __cplusplus  
+extern "C" {  // only need to export C interface if  
+			  // used by C++ source code  
+#endif  
 
-extern NAVITARWRAPPER_API int nNavitarWrapper;
+NAVITARWRAPPER_API int* __stdcall getBridge();
+NAVITARWRAPPER_API void __stdcall setValue(int* handle, int value);
+NAVITARWRAPPER_API int __stdcall getValue(int* handle);
 
-NAVITARWRAPPER_API int fnNavitarWrapper(void);
 
-NAVITARWRAPPER_API int* getBridge();
-
+#ifdef __cplusplus  
+}
+#endif  

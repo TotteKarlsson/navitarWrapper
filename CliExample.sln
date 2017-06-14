@@ -4,10 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CliExample", "CliExample\CliExample.vcxproj", "{20933BEF-2FD3-4A52-96D9-E816E04E740F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4} = {24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedComponent", "ManagedComponent\ManagedComponent.csproj", "{BE9423D0-C0C7-4A80-9463-46BC69766F7D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NavitarWrapper", "NavitarWrapper\NavitarWrapper.vcxproj", "{24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestWrap", "TestWrap\TestWrap.vcxproj", "{19E7B489-1B4C-4A6B-9C8C-02C865F97906}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4} = {24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4}
+		{BE9423D0-C0C7-4A80-9463-46BC69766F7D} = {BE9423D0-C0C7-4A80-9463-46BC69766F7D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +71,20 @@ Global
 		{24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4}.Release|Win32.Build.0 = Release|Win32
 		{24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4}.Release|x64.ActiveCfg = Release|x64
 		{24A2303A-A3AD-48E7-B91C-EFBA9D49D5A4}.Release|x64.Build.0 = Release|x64
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|Win32.Build.0 = Debug|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|x64.ActiveCfg = Debug|x64
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Debug|x64.Build.0 = Debug|x64
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|Any CPU.ActiveCfg = Release|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|Win32.ActiveCfg = Release|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|Win32.Build.0 = Release|Win32
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|x64.ActiveCfg = Release|x64
+		{19E7B489-1B4C-4A6B-9C8C-02C865F97906}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

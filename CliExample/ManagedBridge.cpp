@@ -27,12 +27,12 @@ namespace ManagedBridge {
 	public:
 		MngdAdapter() : adapter(gcnew MngdComponent()) {}
 
-		int GetValue()
+		int getValue()
 		{
 			return adapter->Value;
 		}
 
-		void SetValue(int value)
+		void setValue(int value)
 		{
 			adapter->Value = value;
 		}
@@ -56,14 +56,14 @@ namespace ManagedBridge {
 		delete adapter;
 	}
 
-	int Bridge::GetValue()
+	int Bridge::getValue()
 	{
-		return adapter->GetValue();
+		return adapter->getValue();
 	}
 
-	void Bridge::SetValue(int value)
+	void Bridge::setValue(int value)
 	{
-		adapter->SetValue(value);
+		adapter->setValue(value);
 	}
 
 	void Bridge::PrintMessage(const char* sMsg)

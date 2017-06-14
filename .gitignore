@@ -30,3 +30,4 @@ Test Applications
 *.db
 .suo
 *.user
+*.ilk

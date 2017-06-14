@@ -18,8 +18,8 @@ namespace ManagedBridge {
 		Bridge();		
 		~Bridge();
 
-		void Bridge::SetValue(int value);
-		int Bridge::GetValue();
+		void Bridge::setValue(int value);
+		int Bridge::getValue();
 
 		void PrintMessage(const char* sMsg);
 	};
