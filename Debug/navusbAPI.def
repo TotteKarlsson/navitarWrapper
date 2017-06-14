@@ -1,0 +1,11 @@
+LIBRARY     NAVUSBAPI.DLL
+
+EXPORTS
+ _USBConnectionConnect       =    USBConnectionConnect           @1   ; USBConnectionConnect
+ _USBConnectionConnectSpec   =    USBConnectionConnectSpec       @2   ; USBConnectionConnectSpec
+ _USBConnectionDisconnect    =    USBConnectionDisconnect        @3   ; USBConnectionDisconnect
+ _USBConnectionDisconnectAll =    USBConnectionDisconnectAll     @4   ; USBConnectionDisconnectAll
+ _USBConnectionEstablished   =    USBConnectionEstablished       @5   ; USBConnectionEstablished
+ _USBConnectionRead          =    USBConnectionRead              @6   ; USBConnectionRead
+ _USBConnectionWrite         =    USBConnectionWrite             @7   ; USBConnectionWrite
+ _USBFindUSBinterfaces       =    USBFindUSBinterfaces           @8   ; USBFindUSBinterfaces

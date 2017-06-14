@@ -1,0 +1,6 @@
+LIBRARY     NAVITARWRAPPER.DLL
+
+EXPORTS
+    getBridge                     = _getBridge@0                        
+    getValue                      = _getValue@4                         
+    setValue                      = _setValue@8                         
