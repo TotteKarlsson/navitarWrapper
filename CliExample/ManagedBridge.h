@@ -1,5 +1,3 @@
-// ManagedAdapter.h
-
 #pragma once
 
 namespace ManagedBridge {
@@ -11,17 +9,17 @@ namespace ManagedBridge {
 
 	class Bridge
 	{
-	private:
-		MngdAdapter* adapter;
+		private:
+			MngdAdapter* adapter;
 
-	public:
-		Bridge();		
-		~Bridge();
+		public:
+			Bridge();		
+			~Bridge();
 
-		void Bridge::setValue(int value);
-		int Bridge::getValue();
-
-		void PrintMessage(const char* sMsg);
+			void	setValue(int value);
+			int		getValue();
+			void	printMessage(const char* sMsg);
+			int		findControllers();
 	};
 };
 

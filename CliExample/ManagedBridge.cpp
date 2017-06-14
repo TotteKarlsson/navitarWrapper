@@ -1,10 +1,7 @@
 // This is the main DLL file.
 
 #include "stdafx.h"
-
 #include "ManagedBridge.h"
-
-
 #include <msclr/auto_gcroot.h>
 using msclr::auto_gcroot;
 
@@ -14,11 +11,9 @@ using namespace ManagedComponent;
 
 namespace ManagedBridge {
 
-	///
 	// adapter needed to hide clr stuff from our main .h file so client app 
 	// code can compile cleanly; Provides adapter to the CSharp component
 	// that we wish to interact with
-	///
 	public class MngdAdapter
 	{
 	private:
@@ -37,9 +32,14 @@ namespace ManagedBridge {
 			adapter->Value = value;
 		}
 
-		void PrintMessage(const char* sMsg)
+		void printMessage(const char* sMsg)
 		{
-			adapter->PrintMessage(gcnew String(sMsg));
+			adapter->printMessage(gcnew String(sMsg));
+		}
+
+		int findControllers()
+		{
+			return adapter->findControllers();
 		}
 	};
 	
@@ -66,9 +66,13 @@ namespace ManagedBridge {
 		adapter->setValue(value);
 	}
 
-	void Bridge::PrintMessage(const char* sMsg)
+	void Bridge::printMessage(const char* sMsg)
 	{
-		adapter->PrintMessage(sMsg);
+		adapter->printMessage(sMsg);
 	}
 
+	int Bridge::findControllers()
+	{
+		return adapter->findControllers();
+	}
 }

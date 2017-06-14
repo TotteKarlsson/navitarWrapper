@@ -27,3 +27,8 @@ NAVITARWRAPPER_API int __stdcall getValue(int* handle)
 	}
 	return -1;
 }
+
+NAVITARWRAPPER_API int  __stdcall findControllers(int* handle)
+{
+	return -1;
+}

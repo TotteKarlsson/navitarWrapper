@@ -11,7 +11,9 @@ extern "C" {  // only need to export C interface if
 
 NAVITARWRAPPER_API int* __stdcall getBridge();
 NAVITARWRAPPER_API void __stdcall setValue(int* handle, int value);
-NAVITARWRAPPER_API int __stdcall getValue(int* handle);
+NAVITARWRAPPER_API int  __stdcall getValue(int* handle);
+
+NAVITARWRAPPER_API int  __stdcall findControllers(int* handle);
 
 
 #ifdef __cplusplus  

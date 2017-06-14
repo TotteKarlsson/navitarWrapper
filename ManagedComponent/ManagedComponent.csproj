@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="ControllerGen2.cs" />
+    <Compile Include="ControllerHub.cs" />
+    <Compile Include="ControllerLegacy.cs" />
     <Compile Include="MngdComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

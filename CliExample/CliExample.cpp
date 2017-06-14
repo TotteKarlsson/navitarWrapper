@@ -13,7 +13,8 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	Bridge* bridge = (Bridge*) getBridge();
 
-	bridge->PrintMessage("Hello");
+	bridge->printMessage("Hello");
+	bridge->findControllers();
 	//delete ptr;
 	return 0;
 }
